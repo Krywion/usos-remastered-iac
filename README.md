@@ -51,3 +51,8 @@ terraform plan
 ```bash
 terraform apply
 ```
+
+## License 
+MIT License
+
+
