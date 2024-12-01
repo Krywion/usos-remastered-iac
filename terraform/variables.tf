@@ -10,33 +10,6 @@ variable "app_name" {
   description = "Application name"
 }
 
-variable "vpc_id" {
-  type        = string
-  description = "The ID of the VPC"
-}
-
-variable "public_subnet_cidrs" {
-  type        = list(string)
-  description = "The CIDR blocks of public subnets"
-}
-
-variable "private_subnet_ids" {
-  type        = list(string)
-  description = "The IDs of private subnets"
-}
-
-variable "instance_class" {
-  description = "RDS instance class"
-  type        = string
-  default     = "db.t3.micro"
-}
-
-variable "allocated_storage" {
-  description = "Allocated storage in GB"
-  type        = number
-  default     = 20
-}
-
 variable "database_name" {
   description = "Name of the database to create"
   type        = string
